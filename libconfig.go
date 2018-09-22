@@ -1,4 +1,4 @@
-package libconf
+package libconfig
 
 /*
 #cgo pkg-config: libconfig
