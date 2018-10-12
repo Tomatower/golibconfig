@@ -43,10 +43,6 @@ func (config *Config) Destroy() {
 	C.config_destroy(&config.cconf)
 }
 
-func (config *Config) Clear() {
-	C.config_clear(&config.cconf)
-}
-
 // cgo will copy the whole content - which i do very much not like,
 func (config *Config) ReadString(str string) error {
 	cstr := C.CString(str)
